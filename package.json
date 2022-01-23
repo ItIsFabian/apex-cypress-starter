@@ -1,0 +1,27 @@
+{
+  "name": "apex-cypress-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ItIsFabian/apex-cypress-starter.git",
+  "keywords": [],
+  "author": "ItIsFabian",
+  "license": "MIT",
+  "scripts": {
+    "cy:run": "cypress run",
+    "cy:run:spec": "cypress run --spec",
+    "cy:run:reporter": "cypress run -r junit",
+    "cy:run:chrome": "cypress run -b chrome",
+    "cy:run:firefox": "cypress run -b firefox",
+    "cy:run:edge": "cypress run -b edge",
+    "cy:run:electron": "cypress run -b electron",
+    "cy:run:chromium": "cypress run -b chromium",
+    "lint": "eslint"
+  },
+  "devDependencies": {
+    "cypress": "^9.2.1",
+    "cypress-xpath": "^1.6.2",
+    "eslint": "^8.7.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-cypress": "^2.12.1"
+  }
+}

@@ -1,0 +1,54 @@
+{   
+    "baseUrl": null,
+    "clientCertificates": [],
+    "env": {},
+    "includeShadowDom": false,
+    "numTestsKeptInMemory": 50,
+    "port": null,
+    "redirectionLimit": 20,
+    "reporter": "spec",
+    "reporterOptions": null,
+    "retries": { "runMode": 0, "openMode": 0 },
+    "watchForFileChanges": true,
+
+    "defaultCommandTimeout": 4000,
+    "execTimeout": 60000,
+    "taskTimeout": 60000,
+    "pageLoadTimeout": 60000,
+    "requestTimeout": 5000,
+    "responseTimeout": 30000,
+    "slowTestThreshold": 10000,
+
+    "downloadsFolder": "cypress/downloads",
+    "_fileServerFolder": "root project folder",
+    "fixturesFolder": "cypress/fixtures",
+    "ignoreTestFiles": "*.hot-update.js",
+    "integrationFolder": "cypress/integration",
+    "pluginsFile": "cypress/plugins/index.js",
+    "supportFile": "cypress/support/index.js",
+    "testFiles": "**/*.*",
+
+    "screenshotOnRunFailure": true,
+    "screenshotsFolder": "cypress/screenshots",
+    "trashAssetsBeforeRuns": true,
+    
+    "videoCompression": 32,
+    "videosFolder": "cypress/videos",
+    "video": true,
+    "videoUploadOnPasses": true,
+
+    "chromeWebSecurity": true,
+    "blockHosts": null,
+    "firefoxGcInterval": { "runMode": 1, "openMode": null },
+    "modifyObstructiveCode": true,
+    "userAgent": null,
+
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
+
+    "animationDistanceThreshold": 5,
+    "waitForAnimations": true,
+    "scrollBehavior": "top",
+
+    "nodeversion": "system"
+}
