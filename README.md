@@ -10,7 +10,13 @@ npm install
 
 Test files are created within `cypress/integration/custom_folder`. `*.spec.js` file ending needed.
 
-Run specific test:
+Open Cypress Dashboard:
+
+```sh
+npm run cy:open 
+```
+
+Run specific (headless) test:
 
 ```sh
 npm run cy:run:spec cypress/integration/custom_folder/test.spec.js

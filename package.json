@@ -7,6 +7,7 @@
   "author": "ItIsFabian",
   "license": "MIT",
   "scripts": {
+    "cy:open": "cypress open",
     "cy:run": "cypress run",
     "cy:run:spec": "cypress run --spec",
     "cy:run:reporter": "cypress run -r junit",

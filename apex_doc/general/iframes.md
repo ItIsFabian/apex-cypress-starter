@@ -5,7 +5,7 @@
 
 Nothing. Cypress does not support natively. But a custom command can be added inside `support/index.js` that makes working with iframes possible:
 ```js
-Cypress.Commands.add('getIframeBody', () => {
+Cypress.Commands.add('getIframe', () => {
     // get the iframe > document > body
     // and retry until the body element is not empty
     return cy
@@ -19,7 +19,7 @@ Cypress.Commands.add('getIframeBody', () => {
 ```
 Usage:
 ```js
-cy.getIframeBody().find("#submit_bttn").click()
+cy.getIframe().find("#submit_bttn").click()
 ```
 For working with cross-domain iframes, chrome websecurity has to be disabled in the `cypress.json`:
 ```json
@@ -29,9 +29,11 @@ For working with cross-domain iframes, chrome websecurity has to be disabled in 
 ```
 There is also a Plugin designed specifically for iframes in cypress: https://www.npmjs.com/package/cypress-iframe
 It offers the benefit of being able to work with multiple iframes, for our use case the added command should suffice however. 
+
 ---
  ### APEX specifics
  The solution with the custom command works also with iframes used in an APEX context.
+
 ---
  ### Impact on existing LCT Code 
 

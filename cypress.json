@@ -34,7 +34,7 @@
     
     "videoCompression": 32,
     "videosFolder": "cypress/videos",
-    "video": true,
+    "video": false,
     "videoUploadOnPasses": true,
 
     "chromeWebSecurity": true,

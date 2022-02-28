@@ -20,6 +20,8 @@ Cypress' quering functionality uses jquery as base. That means selecting DOM Ele
     - `cy.xpath("//ul[@class="todo-list"]//li")` - Get list item with unordered list with CSS class "todo-list" as parent.
     - `cy.xpath("//*[@id="submit_bttn"]")` - Get element with id "submit_bttn"
 
+- To obtain the currently focused element, `cy.focused()` can be used
+
 > __Countering Flakiness__:
 >
 >In order to deal with flakiness due to for example slow internet conntections, `cy.get()`/`cy.get().find()`/`cy.contains()` are retried multiple times, if an element is not found. The retries can be limited locally (per element) by passing a timeout value (`cy.get("#submit_bttn", { timeout: 10000 })`) or globally by changing the __defaultCommandTimeout__-option in __cypress.json__.

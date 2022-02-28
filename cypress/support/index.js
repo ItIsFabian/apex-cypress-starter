@@ -19,7 +19,7 @@ import './commands'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
-Cypress.Commands.add('getIframeBody', () => {
+Cypress.Commands.add('getIframe', () => {
     // get the iframe > document > body
     // and retry until the body element is not empty
     return cy
